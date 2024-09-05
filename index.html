@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Resultados de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+        }
+
+        #predictions-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .prediction-card {
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            position: relative;
+        }
+
+        .prediction-card.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .team {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: #007bff;
+        }
+
+        .date-time {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .real-result {
+            font-size: 16px;
+            color: green;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Loader */
+        #loading-message {
+            font-size: 18px;
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        footer p, footer a {
+            margin: 5px 0;
+            color: white;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+        }
+
+        .social-media {
+            margin-top: 15px;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Previsão de Resultados de Futebol</h1>
+    </header>
+
+    <main id="predictions-container">
+        <!-- As previsões serão geradas aqui dinamicamente -->
+        <div id="loading-message">Carregando previsões...</div>
+    </main>
+
+    <footer>
+        <p><span>Criador da Página:</span> UNVS</p>
+        <p><span>Empresa Responsável pelas Análises:</span> UNVS</p>
+        <div class="contact-info">
+            <p><span>Contato:</span> +244 936 398 557 (WhatsApp)</p>
+            <p><span>Localização:</span> Benguela, Angola</p>
+        </div>
+        <div class="social-media">
+            <p><span>Siga-nos:</span></p>
+            <a href="https://web.facebook.com/custodiojoaquim.chingueta" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script>
+        // Dados de exemplo para as previsões
+        const predictions = [
+            { 
+                homeTeam: 'Benfica', 
+                awayTeam: 'Porto', 
+                result: 'Vitória', 
+                score: '2 - 1', 
+                realResult: '2 - 2', 
+                dateTime: '10/09/2024 16:00' 
+            },
+            { 
+                homeTeam: 'Sporting', 
+                awayTeam: 'Braga', 
+                result: 'Empate', 
+                score: '1 - 1', 
+                realResult: '0 - 1', 
+                dateTime: '11/09/2024 18:30' 
+            },
+            { 
+                homeTeam: 'Flamengo', 
+                awayTeam: 'Palmeiras', 
+                result: 'Vitória', 
+                score: '3 - 2', 
+                realResult: '3 - 2', 
+                dateTime: '12/09/2024 20:00' 
+            },
+        ];
+
+        // Função para gerar os cartões de previsão
+        function generatePredictions() {
+            const container = document.getElementById('predictions-container');
+            const loadingMessage = document.getElementById('loading-message');
+
+            // Remove a mensagem de carregamento após 1.5s
+            setTimeout(() => {
+                loadingMessage.style.display = 'none';
+
+                predictions.forEach((prediction, index) => {
+                    const card = document.createElement('section');
+                    card.className = 'prediction-card';
+
+                    card.innerHTML = `
+                        <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                        <div class="team home-team">
+                            <h2>Time da Casa</h2>
+                            <p>${prediction.homeTeam}</p>
+                        </div>
+                        <div class="prediction">
+                            <p>Previsão de Resultado</p>
+                            <p><strong>${prediction.result}</strong></p>
+                            <p>Previsão de Gols: <strong>${prediction.score}</strong></p>
+                        </div>
+                        <div class="team away-team">
+                            <h2>Time Visitante</h2>
+                            <p>${prediction.awayTeam}</p>
+                        </div>
+                        <p class="date-time">Data e Hora: ${prediction.dateTime}</p>
+                        <p class="real-result">Resultado Real: ${prediction.realResult}</p>
+                    `;
+
+                    container.appendChild(card);
+
+                    // Animação de cada cartão ao carregá-lo, com pequeno atraso entre eles
+                    setTimeout(() => {
+                        card.classList.add('loaded');
+                    }, index * 300); // Cada cartão será carregado com um atraso de 300ms
+                });
+            }, 1500); // Simula um carregamento de 1.5s
+        }
+
+        // Função para atualizar as previsões automaticamente
+        function refreshPredictions() {
+            document.getElementById('predictions-container').innerHTML = '';
+            generatePredictions();
+        }
+
+        // Chama a função para gerar as previsões ao carregar a página
+        window.onload = generatePredictions;
+
+        // Atualiza as previsões a cada 60 segundos
+        setInterval(refreshPredictions, 60000);
+    </script>
+</body>
+</html>
