@@ -1,12 +1,9 @@
-Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌveis, vocÍ pode ajustar a largura dos cartıes e o padding. Aqui est· a vers„o modificada do CSS com cartıes menores:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previs„o de Resultados de Futebol</title>
+    <title>Previs√£o de Resultados de Futebol</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -78,8 +75,8 @@ Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌvei
             position: absolute;
             top: 10px;
             right: 10px;
-            width: 30px; /* Ajustado o tamanho do Ìcone */
-            height: 30px; /* Ajustado o tamanho do Ìcone */
+            width: 30px; /* Ajustado o tamanho do √≠cone */
+            height: 30px; /* Ajustado o tamanho do √≠cone */
         }
 
         /* Loader */
@@ -126,20 +123,20 @@ Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌvei
 </head>
 <body>
     <header>
-        <h1>Previs„o de Resultados de Futebol</h1>
+        <h1>Previs√£o de Resultados de Futebol</h1>
     </header>
 
     <main id="predictions-container">
-        <!-- As previsıes ser„o geradas aqui dinamicamente -->
-        <div id="loading-message">Carregando previsıes...</div>
+        <!-- As previs√µes ser√£o geradas aqui dinamicamente -->
+        <div id="loading-message">Carregando previs√µes...</div>
     </main>
 
     <footer>
-        <p><span>Criador da P·gina:</span> UNVS</p>
-        <p><span>Empresa Respons·vel pelas An·lises:</span> UNVS</p>
+        <p><span>Criador da P√°gina:</span> UNVS</p>
+        <p><span>Empresa Respons√°vel pelas An√°lises:</span> UNVS</p>
         <div class="contact-info">
             <p><span>Contato:</span> +244 936 398 557 (WhatsApp)</p>
-            <p><span>LocalizaÁ„o:</span> Benguela, Angola</p>
+            <p><span>Localiza√ß√£o:</span> Benguela, Angola</p>
         </div>
         <div class="social-media">
             <p><span>Siga-nos:</span></p>
@@ -148,12 +145,12 @@ Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌvei
     </footer>
 
     <script>
-        // Dados de exemplo para as previsıes
+        // Dados de exemplo para as previs√µes
         const predictions = [
             { 
                 homeTeam: 'Benfica', 
                 awayTeam: 'Porto', 
-                result: 'VitÛria', 
+                result: 'Vit√≥ria', 
                 score: '2 - 1', 
                 realResult: '2 - 2', 
                 dateTime: '10/09/2024 16:00' 
@@ -169,19 +166,19 @@ Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌvei
             { 
                 homeTeam: 'Flamengo', 
                 awayTeam: 'Palmeiras', 
-                result: 'VitÛria', 
+                result: 'Vit√≥ria', 
                 score: '3 - 2', 
                 realResult: '3 - 2', 
                 dateTime: '12/09/2024 20:00' 
             },
         ];
 
-        // FunÁ„o para gerar os cartıes de previs„o
+        // Fun√ß√£o para gerar os cart√µes de previs√£o
         function generatePredictions() {
             const container = document.getElementById('predictions-container');
             const loadingMessage = document.getElementById('loading-message');
 
-            // Remove a mensagem de carregamento apÛs 1.5s
+            // Remove a mensagem de carregamento ap√≥s 1.5s
             setTimeout(() => {
                 loadingMessage.style.display = 'none';
 
@@ -196,9 +193,9 @@ Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌvei
                             <p>${prediction.homeTeam}</p>
                         </div>
                         <div class="prediction">
-                            <p>Previs„o de Resultado</p>
+                            <p>Previs√£o de Resultado</p>
                             <p><strong>${prediction.result}</strong></p>
-                            <p>Previs„o de Gols: <strong>${prediction.score}</strong></p>
+                            <p>Previs√£o de Gols: <strong>${prediction.score}</strong></p>
                         </div>
                         <div class="team away-team">
                             <h2>Time Visitante</h2>
@@ -210,23 +207,22 @@ Claro! Para reduzir o tamanho dos cartıes e garantir que eles permaneÁam legÌvei
 
                     container.appendChild(card);
 
-                    // AnimaÁ„o de cada cart„o ao carreg·-lo, com pequeno atraso entre eles
+                    // Anima√ß√£o de cada cart√£o ao carreg√°-lo, com pequeno atraso entre eles
                     setTimeout(() => {
                         card.classList.add('loaded');
-                    }, index * 300); // Cada cart„o ser· carregado com um atraso de 300ms
+                    }, index * 300); // Cada cart√£o ser√° carregado com um atraso de 300ms
                 });
             }, 1500); // Simula um carregamento de 1.5s
         }
 
-        // FunÁ„o para atualizar as previsıes automaticamente
+        // Fun√ß√£o para atualizar as previs√µes automaticamente
         function refreshPredictions() {
             document.getElementById('predictions-container').innerHTML = '';
             generatePredictions();
         }
 
-        // Chama a funÁ„o para gerar as previsıes ao carregar a p·gina
+        // Chama a fun√ß√£o para gerar as previs√µes ao carregar a p√°gina
         window.onload = generatePredictions;
 
-        // Atualiza as previsıes a cada 60 segundos
+        // Atualiza as previs√µes a cada 60 segundos
         setInterval(refreshPredictions, 60000);
-    </
