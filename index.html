@@ -32,53 +32,43 @@
             background: white;
             border: 2px solid #007bff;
             border-radius: 10px;
-            padding: 10px; /* Reduzido de 15px para 10px */
-            margin: 5px; /* Reduzido de 10px para 5px */
-            width: 140px; /* Reduzido de 280px para 140px */
+            padding: 10px;
+            margin: 5px;
+            width: 140px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            opacity: 1;
-            transform: translateY(0);
-            transition: none;
+            font-size: 12px;
             position: relative;
-            font-size: 12px; /* Opcional: Reduzido de 14px para 12px */
         }
 
         .team {
-            margin-bottom: 5px; /* Reduzido de 10px para 5px */
+            margin-bottom: 5px;
         }
 
         h2 {
-            margin: 5px 0; /* Reduzido de 10px para 5px */
+            margin: 5px 0;
             color: #007bff;
-            font-size: 14px; /* Opcional: Reduzido de 16px para 14px */
+            font-size: 14px;
         }
 
         .date-time {
-            font-size: 10px; /* Opcional: Reduzido de 12px para 10px */
+            font-size: 10px;
             color: #555;
-            margin-bottom: 5px; /* Reduzido de 10px para 5px */
+            margin-bottom: 5px;
         }
 
         .real-result {
-            font-size: 12px; /* Opcional: Reduzido de 14px para 12px */
+            font-size: 12px;
             color: green;
             font-weight: bold;
-            margin-bottom: 5px; /* Reduzido de 10px para 5px */
+            margin-bottom: 5px;
         }
 
         .icon {
             position: absolute;
-            top: 5px; /* Reduzido de 10px para 5px */
-            right: 5px; /* Reduzido de 10px para 5px */
-            width: 15px; /* Reduzido de 30px para 15px */
-            height: 15px; /* Reduzido de 30px para 15px */
-        }
-
-        /* Loader */
-        #loading-message {
-            font-size: 16px;
-            color: #007bff;
-            margin-top: 20px;
+            top: 5px;
+            right: 5px;
+            width: 15px;
+            height: 15px;
         }
 
         footer {
@@ -122,8 +112,943 @@
     </header>
 
     <main id="predictions-container">
-        <!-- As previsões serão geradas aqui dinamicamente -->
-        <div id="loading-message">Carregando previsões...</div>
+        <!-- Cartões de previsão estáticos -->
+        <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Benfica</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Vitória</strong></p>
+                <p>Previsão de Gols: <strong>2 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Porto</p>
+            </div>
+            <p class="date-time">Data e Hora: 10/09/2024 16:00</p>
+            <p class="real-result">Resultado Real: 2 - 2</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>
+    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>    <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>
+        <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Sporting</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Empate</strong></p>
+                <p>Previsão de Gols: <strong>1 - 1</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Braga</p>
+            </div>
+            <p class="date-time">Data e Hora: 11/09/2024 18:30</p>
+            <p class="real-result">Resultado Real: 0 - 1</p>
+            <p class="league">Liga: Primeira Liga</p>
+            <p class="country">País: Portugal</p>
+        </section>
+
+        <section class="prediction-card">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+            <div class="team home-team">
+                <h2>Time da Casa</h2>
+                <p>Flamengo</p>
+            </div>
+            <div class="prediction">
+                <p>Previsão de Resultado</p>
+                <p><strong>Vitória</strong></p>
+                <p>Previsão de Gols: <strong>3 - 2</strong></p>
+            </div>
+            <div class="team away-team">
+                <h2>Time Visitante</h2>
+                <p>Palmeiras</p>
+            </div>
+            <p class="date-time">Data e Hora: 12/09/2024 20:00</p>
+            <p class="real-result">Resultado Real: 3 - 2</p>
+            <p class="league">Liga: Brasileirão</p>
+            <p class="country">País: Brasil</p>
+        </section>
     </main>
 
     <footer>
@@ -138,76 +1063,5 @@
             <a href="https://web.facebook.com/custodiojoaquim.chingueta" target="_blank">Facebook</a>
         </div>
     </footer>
-
-    <script>
-        // Dados de exemplo para as previsões
-        const predictions = [
-            { 
-                homeTeam: 'Benfica', 
-                awayTeam: 'Porto', 
-                result: 'Vitória', 
-                score: '2 - 1', 
-                realResult: '2 - 2', 
-                dateTime: '10/09/2024 16:00' 
-            },
-            { 
-                homeTeam: 'Sporting', 
-                awayTeam: 'Braga', 
-                result: 'Empate', 
-                score: '1 - 1', 
-                realResult: '0 - 1', 
-                dateTime: '11/09/2024 18:30' 
-            },
-            { 
-                homeTeam: 'Flamengo', 
-                awayTeam: 'Palmeiras', 
-                result: 'Vitória', 
-                score: '3 - 2', 
-                realResult: '3 - 2', 
-                dateTime: '12/09/2024 20:00' 
-            },
-        ];
-
-        // Função para gerar os cartões de previsão
-        function generatePredictions() {
-            const container = document.getElementById('predictions-container');
-            const loadingMessage = document.getElementById('loading-message');
-
-            // Remove a mensagem de carregamento
-            loadingMessage.style.display = 'none';
-
-            predictions.forEach((prediction) => {
-                const card = document.createElement('section');
-                card.className = 'prediction-card';
-
-                card.innerHTML = `
-                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
-                    <div class="team home-team">
-                        <h2>Time da Casa</h2>
-                        <p>${prediction.homeTeam}</p>
-                    </div>
-                    <div class="prediction">
-                        <p>Previsão de Resultado</p>
-                        <p><strong>${prediction.result}</strong></p>
-                        <p>Previsão de Gols: <strong>${prediction.score}</strong></p>
-                    </div>
-                    <div class="team away-team">
-                        <h2>Time Visitante</h2>
-                        <p>${prediction.awayTeam}</p>
-                    </div>
-                    <p class="date-time">Data e Hora: ${prediction.dateTime}</p>
-                    <p class="real-result">Resultado Real: ${prediction.realResult}</p>
-                `;
-
-                container.appendChild(card);
-            });
-        }
-
-        // Chama a função para gerar as previsões ao carregar a página
-        window.onload = generatePredictions;
-
-        // Atualiza as previsões a cada 60 segundos
-        setInterval(generatePredictions, 60000);
-    </script>
 </body>
 </html>
