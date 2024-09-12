@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Resultados de Futebol da UNVS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+        }
+
+        .country-section {
+            margin: 20px 0;
+            padding: 10px;
+            border-top: 2px solid #007bff;
+        }
+
+        .country-title {
+            font-size: 18px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .date-section {
+            margin: 15px 0;
+        }
+
+        .date-title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        #predictions-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .prediction-card {
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            width: 140px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            font-size: 12px;
+        }
+
+        .team {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin: 5px 0;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .real-result {
+            font-size: 12px;
+            color: green;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 15px;
+            height: 15px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        footer p, footer a {
+            margin: 5px 0;
+            color: white;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+        }
+
+        .social-media {
+            margin-top: 15px;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Previsão de Resultados de Futebol da UNVS</h1>
+        <p>Previsões correspondem às partidas de 10/09/2024 ao dia 12/09/2024</p>
+    </header>
+
+    <main id="predictions-container">
+
+        <!-- Seção de Portugal -->
+        <div class="country-section">
+            <h2 class="country-title">Portugal</h2>
+
+            <!-- Seção da data 12/09/2024 -->
+            <div class="date-section">
+                <h3 class="date-title">12/09/2024</h3>
+
+                <!-- Cartão 1 -->
+                <section class="prediction-card">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                    <div class="team home-team">
+                        <h2>Time da Casa</h2>
+                        <p>Benfica</p>
+                    </div>
+                    <div class="team away-team">
+                        <h2>Time Visitante</h2>
+                        <p>Porto</p>
+                    </div>
+                    <div class="prediction">
+                        <p>Previsão de Resultado</p>
+                        <p><strong>Vitória</strong></p>
+                        <p>Previsão de Gols: <strong>2 - 1</strong></p>
+                    </div>
+                    <p class="real-result">Resultado Real: 2 - 1</p>
+                </section>
+            </div>
+
+            <!-- Seção da data 11/09/2024 -->
+            <div class="date-section">
+                <h3 class="date-title">11/09/2024</h3>
+
+                <!-- Cartão 2 -->
+                <section class="prediction-card">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                    <div class="team home-team">
+                        <h2>Time da Casa</h2>
+                        <p>Sporting</p>
+                    </div>
+                    <div class="team away-team">
+                        <h2>Time Visitante</h2>
+                        <p>Braga</p>
+                    </div>
+                    <div class="prediction">
+                        <p>Previsão de Resultado</p>
+                        <p><strong>Empate</strong></p>
+                        <p>Previsão de Gols: <strong>1 - 1</strong></p>
+                    </div>
+                    <p class="real-result">Resultado Real: 1 - 1</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Seção do Brasil -->
+        <div class="country-section">
+            <h2 class="country-title">Brasil</h2>
+
+            <!-- Seção da data 12/09/2024 -->
+            <div class="date-section">
+                <h3 class="date-title">12/09/2024</h3>
+
+                <!-- Cartão 3 -->
+                <section class="prediction-card">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                    <div class="team home-team">
+                        <h2>Time da Casa</h2>
+                        <p>Flamengo</p>
+                    </div>
+                    <div class="team away-team">
+                        <h2>Time Visitante</h2>
+                        <p>Palmeiras</p>
+                    </div>
+                    <div class="prediction">
+                        <p>Previsão de Resultado</p>
+                        <p><strong>Vitória</strong></p>
+                        <p>Previsão de Gols: <strong>3 - 2</strong></p>
+                    </div>
+                    <p class="real-result">Resultado Real: 3 - 2</p>
+                </section>
+            </div>
+
+            <!-- Seção da data 11/09/2024 -->
+            <div class="date-section">
+                <h3 class="date-title">11/09/2024</h3>
+
+                <!-- Cartão 4 -->
+                <section class="prediction-card">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                    <div class="team home-team">
+                        <h2>Time da Casa</h2>
+                        <p>Vasco</p>
+                    </div>
+                    <div class="team away-team">
+                        <h2>Time Visitante</h2>
+                        <p>Botafogo</p>
+                    </div>
+                    <div class="prediction">
+                        <p>Previsão de Resultado</p>
+                        <p><strong>Empate</strong></p>
+                        <p>Previsão de Gols: <strong>1 - 1</strong></p>
+                    </div>
+                    <p class="real-result">Resultado Real: 1 - 1</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Seção da Alemanha -->
+        <div class="country-section">
+            <h2 class="country-title">Alemanha</h2>
+
+            <!-- Seção da data 12/09/2024 -->
+            <div class="date-section">
+                <h3 class="date-title">12/09/2024</h3>
+
+                <!-- Cartão 5 -->
+                <section class="prediction-card">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                    <div class="team home-team">
+                        <h2>Time da Casa</h2>
+                        <p>Bayern</p>
+                    </div>
+                    <div class="team away-team">
+                        <h2>Time Visitante</h2>
+                        <p>RB Leipzig</p>
+                    </div>
+                    <div class="prediction">
+                        <p>Previsão de Resultado</p>
+                        <p><strong>Vitória</strong></p>
+                        <p>Previsão de Gols: <strong>2 - 0</strong></p>
+                    </div>
+                    <p class="real-result">Resultado Real: 2 - 0</p>
+                </section>
+            </div>
+
+            <!-- Seção da data 11/09/2024 -->
+            <div class="date-section">
+                <h3 class="date-title">11/09/2024</h3>
+
+                <!-- Cartão 6 -->
+                <section class="prediction-card">
+                    <img class="icon" src="https://img.icons8.com/ios-filled/50/007bff/soccer-ball.png" alt="Bola de Futebol">
+                    <div class="team home-team">
+                        <h2>Time da Casa</h2>
+                        <p>Dortmund</p>
+                    </div>
+                    <div class="team away-team">
+                        <h2>Time Visitante</h2>
+                        <p>Schalke</p>
+                    </div>
+                    <div class="prediction">
+                        <p>Previsão de Resultado</p>
+                        <p><strong>Empate</strong></p>
+                        <p>Previsão de Gols: <strong>1 - 1</strong></p>
+                    </div>
+                    <p class="real-result">Resultado Real: 1 - 1</p>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+   <footer>
+        <p>UNVS - União Nacional de Visão Sistêmica</p>
+        <div class="contact-info">
+            <p><span>Endereço:</span> Benguela, Benguela - Angola</p>
+            <p><span>WhatsApp:</span> +244 936 398 557</p>
+            <p><span>Email:</span> custodiochingueta@gmail.com</p>
+        </div>
+        <div class="mission">
+            <p>A UNVS </p>
+        </div>
+        <div class="social-media">
+            <p>Redes Sociais:</p>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>    <footer>
+        <p><a href="page1.html">Voltar à Página Principal</a></p>
+    </footer>
+</body>
+</html>
